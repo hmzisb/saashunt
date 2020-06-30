@@ -1,5 +1,6 @@
 ### SaasHunt
 **ProductHunt Clone built from scratch using Laravel. Built this for my personal learning purpose.**
+------------------------------------------------------------------------------------------------------
  
  
 ![saashunt-home](https://user-images.githubusercontent.com/21350316/86148708-68c98a00-bb14-11ea-8dbb-abe5670125ce.png)
