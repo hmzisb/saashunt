@@ -25,8 +25,7 @@ class UserController extends Controller
                 array_push($usernotifications, $notify);
            }
         }
-
-        
+     
         return view('notifications', compact('usernotifications'));
 
     }

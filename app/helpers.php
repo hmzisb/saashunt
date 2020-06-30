@@ -25,14 +25,15 @@ function imageresize($width, $image, $subfolder='')
     }
 
     // $subfolder = $subfolder : $subfolder . '/' : '';
-    $store_path = 'images/'.$subfolder.$filename;
+    $store_path = 'app/public/' . $subfolder.$filename;
+    $return_path = $subfolder.$filename;
 
     Image::make($image)
     ->resize($width, null, function ($constraint){ 
         $constraint->aspectRatio(); 
         $constraint->upsize();
         })
-        ->save(public_path($store_path));
+        ->save(storage_path($store_path));
 
-    return $store_path;
+    return $return_path;
 }
